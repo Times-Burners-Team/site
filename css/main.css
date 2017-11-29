@@ -195,10 +195,10 @@ hr {
   width:100%;
 }
 
-#f a{
+#f #bl{
   color: #999;
 }
-#f a:hover, a:focus {
+#f #bl:hover, #bl:focus {
   color: #f85c37;
   text-decoration: none;
   outline: 0;
@@ -221,12 +221,12 @@ font-size: 50px;
 #f i:hover {
   color: #ff7878;
 }
+#f i:hover, i:focus{
+  color: grey;
+  text-decoration: none;
+  outline: 0;
+}
 
 #i {
   color: #f85c37
-}
-#i:hover, #i:focus{
-  color: #ffffff;
-  text-decoration: none;
-  outline: 0;
 }
