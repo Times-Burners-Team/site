@@ -174,35 +174,35 @@ hr {
   color: black;
 }
 
-footer{
+#f{
 }
-footer .container{
+#f .container{
   background-color:#2D2D2D!important;
   width:100%;
 }
 
-footer a{
+#f a{
   color: #999;
 }
-footer a:hover, a:focus {
+#f a:hover, a:focus {
   color: #f85c37;
   text-decoration: none;
   outline: 0;
 }
 
-footer h4{
+#f h4{
   color: #999;
 }
 
-footer p{
+#f p{
   color: #999;
 }
 
-footer i{
+#f i{
 font-size: 30px;
-  padding: 20px;
+  padding: 1000000000px;
 }
 
-footer i:hover {
+#f i:hover {
   color: #ff7878;
 }
