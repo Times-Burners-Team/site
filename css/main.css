@@ -190,3 +190,30 @@ hr {
 #f i:hover {
   color: #ff7878;
 }
+footer{
+}
+footer .container{
+  background-color:#2D2D2D!important;
+  width:100%;
+}
+footer a{
+  color: #999;
+}
+footer a:hover, a:focus {
+  color: #f85c37;
+  text-decoration: none;
+  outline: 0;
+}
+footer h4{
+  color: #999;
+}
+footer p{
+  color: #999;
+}
+footer i{
+font-size: 30px;
+  padding: 20px;
+}
+footer i:hover {
+  color: #ff7878;
+}
