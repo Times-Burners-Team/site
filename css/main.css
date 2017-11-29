@@ -121,7 +121,16 @@ hr {
 #dg h4 {
   font-size: 40px;
 }
-
+#dg  ul{
+  margin-top: 20px;
+}
+#dg .panel-primary{
+  border-color: #7b7b7b!important;
+}
+#dg .panel-primary > .panel-heading{
+  border-color: #7b7b7b!important;
+  background-color: #7b7b7b!important;
+}
 .tilt {
   -webkit-transition: all 0.5s ease;
      -moz-transition: all 0.5s ease;
