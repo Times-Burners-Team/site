@@ -159,19 +159,19 @@ hr {
 }
 
 #r {
-  background: #ff7878;
+  background: white;
   padding-top: 70px;
   padding-bottom: 70px;
 }
 
 
 #r h4 {
-  color: white;
+  color: black;
   font-size: 45px;
 }
 
 #r p {
-  color: white;
+  color: black;
 }
 
 
