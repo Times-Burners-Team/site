@@ -18,6 +18,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: 300;
   color: #333;
 }
+ i:hover i:focus{
+  color: #aaaaaa;
+  text-decoration: none;
+  outline: 0;
+}
 
 p {
   line-height: 28px;
@@ -217,6 +222,6 @@ font-size: 50px;
   color: #ff7878;
 }
 
-#i {
+#ic {
   color: #f85c37
 }
