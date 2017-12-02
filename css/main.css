@@ -15,11 +15,12 @@ body {
   margin-top: 70px;
 }
 #fixed{
-  width:200px;
+  width:250px;
   position:absolute;
   right:20px;
-  border: solid red;
+  border: solid rgb(102, 101, 103);
   text-align:center;
+  background-color: #909090;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -234,4 +235,10 @@ font-size: 50px;
 
 #ic {
   color: #f85c37
+}
+form {
+ padding:10px!important;
+}
+form label {
+ float:left!important;
 }

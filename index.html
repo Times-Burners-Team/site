@@ -21,7 +21,7 @@
               $('#fixed').stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
           }
           else {
-              $('#fixed').stop().animate({marginTop: 200});
+              $('#fixed').stop().animate({marginTop: 150});
           }
       });
   });
@@ -39,7 +39,22 @@
 </head>
 <body>
   <div id="fixed">
-  <h4>qda</h4>
+  <h4>Write Us</h4>
+  <form role="form">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form" id="email" placeholder="Email adress...">
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="name" id="name" placeholder="Your Name...">
+    </div>
+    <div class="form-group">
+      <label for="login">Login:</label>
+      <input type="login" id="login" placeholder="Your Login...">
+    </div>
+    <a href="mailto:timeburnersmember@gmail.com%2C%20timeburnersteam@gmail.com">Send</a>
+    </form>
   </div>
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
