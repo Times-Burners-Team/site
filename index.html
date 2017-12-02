@@ -9,16 +9,27 @@
   <script src="js/scripts.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
-  <script src="js/jquery.slick.1.2.js"></script>
-  <script src="js/jquery.slick.1.2.min.js"></script>
   <script>
     new WOW().init();
+  </script>
+  <script type="text/javascript">
+  $(document).ready(function () {
+        var offset = $('#fixed').offset();
+      var topPadding = 200;
+      $(window).scroll(function() {
+          if ($(window).scrollTop() > offset.top) {
+              $('#fixed').stop().animate({marginTop: $(window).scrollTop() - offset.top + topPadding});
+          }
+          else {
+              $('#fixed').stop().animate({marginTop: 200});
+          }
+      });
+  });
   </script>
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
-  <link rel="stylesheet" href="css/dcslick.css">
 
 
   <!--_________________________________________________________
@@ -27,12 +38,9 @@
   _________________________________________________________-->
 </head>
 <body>
-<div class="dc-slick right align-top" id="dc-slick-13" style="top:100px; margin-right:306px; position: fixed;z-index:10000;">
-  <div class="tab" style="margin-left:-64px; position:absolute;">
-    <span>Slick 2</span>
+  <div id="fixed">
+  <h4>qda</h4>
   </div>
-  <div class="dc-slick-content" style="height: 377px">....</div>
-</div>
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">

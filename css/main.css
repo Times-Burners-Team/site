@@ -14,7 +14,13 @@ body {
 
   margin-top: 70px;
 }
-
+#fixed{
+  width:200px;
+  position:absolute;
+  right:20px;
+  border: solid red;
+  text-align:center;
+}
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
