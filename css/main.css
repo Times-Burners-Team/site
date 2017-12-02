@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
 
+
+
 body {
   background-color: #f2f2f2;
   font-family: "Lato";
@@ -11,6 +13,13 @@ body {
   -webkit-overflow-scrolling: touch;
 
   margin-top: 70px;
+}
+.fix-scroll{
+  border: 1px solid black;
+  width: 450px;
+  height: 250px;
+  position: fixed;
+  bottom: 150px;
 }
 
 h1, h2, h3, h4, h5, h6 {
