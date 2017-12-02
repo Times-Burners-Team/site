@@ -14,13 +14,7 @@ body {
 
   margin-top: 70px;
 }
-.fix-scroll{
-  border: 1px solid black;
-  width: 450px;
-  height: 250px;
-  position: fixed;
-  bottom: 150px;
-}
+
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
