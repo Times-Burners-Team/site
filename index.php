@@ -1,14 +1,20 @@
+<?php
+  session_start();
+  if($_GET["send"] == 1)
+  echo "You have successfully sent a message to E-mail:" .$_SESSION["to"];
+ ?>
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>TimesBurnersTeam</title>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TimeBurnersTeam</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
   <script src="js/scripts.js"></script>
   <script src="js/wow.min.js"></script>
   <script src="js/jquery-3.2.1.min.js"></script>
+  <script src="js/jquery.the-modal.js"></script>
   <script>
     new WOW().init();
   </script>
@@ -16,8 +22,7 @@
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/animate.css">
-
-
+  <link rel="stylesheet" href="css/the-modal.css">
   <!--_________________________________________________________
 
                     HEEEEEAAAAADEEEEER
@@ -33,18 +38,16 @@
           <span class="icon-bar"></span>
         </button>
         <div class="wow bounceInLeft">
-        <a class="navbar-brand" href="index.html">TimeBurnersTeam
+        <a class="navbar-brand" href="index.php">TimeBurnersTeam
         <i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
       </div>
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html" class="wow bounceInDown">Home</a></li>
-          <li><a href="pages/about.html" class="wow bounceInDown">About Us</a></li>
-          <li><a href="php/writeUs.php" class="wow bounceInDown">WriteUs</a></li>
-          <li><a href="pages/oldWorks.html" class="wow bounceInDown">Portfolio</a></li>
-          <li><a href="mailto:timeburnersmember@gmail.com%2C%20timeburnersteam@gmail.com" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-        </ul>
+          <li><a href="index.php" class="wow bounceInDown">Home</a></li>
+          <li><a href="pages/about.php" class="wow bounceInDown">About Us</a></li>
+          <li><a href="pages/oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
+          <li><a href="pages/writeUs.php" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
       </div>
     </div>
   </div>
@@ -157,7 +160,7 @@
   <footer id="f">
     <div class="container">
       <div class="row centered"><hr/>
-        <p>ТУТ БУДЕТ ЧТО-ТО СВЯЗАННОЕ С ФУТЕРОМ</p>
+        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
         <div class="col-lg-2 col-lg-offset-1">
         </div>
       </div>
@@ -171,11 +174,10 @@
     </div>
     <div class="container">
       <div class="row centered">
-        <p><?php
-    echo "Сегодня - ".date("d F Y")."<br>";
-    echo "Текущее время - ".date("H:i:s");
-?></p>
-        <p>© 2017-2017 TimeBurnersTeam. Все права защищены. Копирование разрешено с отсылкой на <a href="#" id="bl">блог</a>.</p>
+        <?php
+        echo "Hello World";
+        ?>
+        <p>2017 - 2017 TimeBurnersTeam.All rights reserved&copy. Copying is allowed with reference to the <a href="#" id="bl">blog</a>.</p>
       </div>
     </div>
   </footer>
