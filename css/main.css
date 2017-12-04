@@ -237,6 +237,7 @@ hr {
   outline: 0;
 }
 
+
 #f h4{
   color: #999;
 }
@@ -250,14 +251,35 @@ font-size: 50px;
   padding: 30px;
 
 }
+/*
+FEEDBACK
+*/
+#myModal .modal-dialog{
+  border: solid #282828;
+  border-radius: 10px;
 
+}
+#myModal .modal-header ,h3{
+  color: #818181;
+  background-color: #333;
+  border-radius: 7px 7px 0px 0px;
+}
+#myModal .modal-body{
+  background-color: #7b7b7b;
+  text-align: center;
+}
+#myModal .modal-footer{
+  background-color: #333;
+  padding: 20px;
+}
+
+
+/*
+FEEDBACK
+*/
 #f i:hover {
   color: #ff7878;
 }
 
 #ic {
   color: #f85c37
-
-/*
-FEEEEDBACK
-*/

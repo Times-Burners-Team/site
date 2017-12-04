@@ -1,7 +1,42 @@
 <?php
-  session_start();
-  if($_GET["send"] == 1)
-  echo "You have successfully sent a message to E-mail:" .$_SESSION["to"];
+session_start();
+  if(isset($_POST["send"])){
+    $from = htmlspecialchars ($_POST["from"]);
+    $to = htmlspecialchars ($_POST["to"]);
+    $subject = htmlspecialchars ($_POST["subject"]);
+    $message = htmlspecialchars ($_POST["message"]);
+    $_SESSION["from"] = $from;
+    $_SESSION["to"] = $to;
+    $_SESSION["subject"] = $subject;
+    $error_from = "";
+    $error_to = "";
+    $error_subject = "";
+    $error_message = "";
+    $error = false;
+      if($from == "" || !preg_match("/@/", $from)){
+        $error_from = "Please enter a valid E-mail";
+        $error = true;
+      }
+      if($to == "" || !preg_match("/@/", $to)){
+        $error_to = "Please enter a valid E-mail";
+        $error = true;
+      }
+      if(strlen($subject) == 0){
+        $error_subject = "Please enter a message subject";
+        $error = true;
+      }
+      if(strlen($message) == 0){
+        $error_message = "Please enter a message";
+        $error = true;
+      }
+      if(!$error){
+        $subject = "=?utf-8?B?".base64_encode($subject)."?=";
+        $headers = "From: $from\r\nReplay-to: $from\r\nContent-type: text/plain; charset=utf-8\r\n";
+        mail($to, $subject, $message, $headers);
+        header ("Location: ../index.php?send=1");
+        exit;
+      }
+  }
  ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -29,6 +64,41 @@
   _________________________________________________________-->
 </head>
 <body>
+  <modal>
+  <div id="myModal" class="modal fade" data-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-header">
+         <h3>Feedback</h3>
+         <?php
+           session_start();
+           if($_GET["send"] == 1)
+           echo "You have successfully sent a message to E-mail:" .$_SESSION["to"];
+          ?>
+      </div>
+      <div class="modal-body">
+        <form name="feedback" action="" method="post">
+          <label>From:</label><br/>
+          <input type="text" name="from" value="<?=$_SESSION["from"]?>"/><br/>
+          <span style="color:red"><?=$error_from?></span>
+          <label>To:</label><br/>
+          <input type="text" name="to" value="<?=$_SESSION["to"]?>"/><br/>
+          <span style="color:red"><?=$error_to?></span>
+          <label>Subject:</label><br/>
+          <input type="text" name="subject" value="<?=$_SESSION["subject"]?>"/><br/>
+          <span style="color:red"><?=$error_subject?></span>
+          <label>Message:</label><br/>
+          <textarea name="message" rows="5" cols="20"></textarea><br/>
+          <span style="color:red"><?=$error_message?></span>
+          <input type="submit" name="send" value="Send letter"/>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</modal>
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -47,7 +117,7 @@
           <li><a href="index.php" class="wow bounceInDown">Home</a></li>
           <li><a href="pages/about.php" class="wow bounceInDown">About Us</a></li>
           <li><a href="pages/oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
-          <li><a href="pages/writeUs.php" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li><a href="#myModal" data-toggle="modal" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
       </div>
     </div>
   </div>
