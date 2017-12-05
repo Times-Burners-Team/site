@@ -90,130 +90,132 @@ if (isset($_POST["send"])) {
     </div>
   </div>
 </modal>
-  <div class="navbar navbar-inverse navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <div class="wow bounceInLeft">
-        <a class="navbar-brand" href="index.php">TimeBurnersTeam
-        <i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
-      </div>
-      </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.php" class="wow bounceInDown">Home</a></li>
-          <li><a href="pages/about.php" class="wow bounceInDown">About Us</a></li>
-          <li><a href="pages/oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
-          <li><a href="#myModal" data-toggle="modal" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
-      </div>
+<div class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <div class="wow bounceInLeft">
+      <a class="navbar-brand" href="index.html">TimeBurnersTeam
+      <i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
+    </div>
+    </div>
+    <div class="navbar-collapse collapse">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="index.php" class="wow bounceInDown">Home</a></li>
+        <li><a href="pages/about.php" class="wow bounceInDown">About Us</a></li>
+        <li><a href="php/writeUs.php" class="wow bounceInDown">WriteUs</a></li>
+        <li><a href="pages/oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
+        <li><a href="#myModal" data-toggle="modal" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+      </ul>
     </div>
   </div>
-  <div id="headerwrap">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h1 class="wow bounceInDown">Mi norm Cheliki</h1>
-          <h2 class="wow bounceInUp">Normas vse delaem</h2>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container w">
+</div>
+<div id="headerwrap">
+  <div class="container">
     <div class="row centered">
-      <br><br>
-    <div class="col-lg-4">
-      <div class="wow bounceInLeft" data-wow-delay="0.5s">
-        <i class="fa fa-heart"></i><br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#hide"><h4>Unical Design</h4></button>
-            <div class="collapse" id="hide">
-                <p>Appearance that everyone likes</p>
-            </div>
-      </div>
-    </div>
-      <div class="col-lg-4">
-        <div class="wow bounceIn" data-wow-delay="0.5s">
-        <i class="fa fa-laptop"></i><br/>
-        <button class="btn btn-link" data-toggle="collapse" data-target="#hide1"><h4>Best Code</h4></button>
-          <div class="collapse" id="hide1">
-          <p>The fast workability of the site is ensured</p>
-        </div>
-      </div>
-    </div>
-      <div class="col-lg-4">
-        <div class="wow bounceInRight" data-wow-delay="0.5s">
-        <i class="fa fa-trophy"></i><br>
-          <button class="btn btn-link" data-toggle="collapse" data-target="#hide2"><h4>Achievements</h4></button>
-            <div class="collapse" id="hide2">
-            <p>The best way to achieve the goal that you set before us</p>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br><br>
-  </div>
-  <div id="dg">
-    <div class="container">
-      <div class="row centered">
-        <div class="wow bounceIn" data-wow-delay="1s">
-        <h4>Nashi raboti</h4>
-      </div>
-        <br>
-        <div class="col-lg-4">
-          <div class="tilt">
-          <div>
-            <a href="#"><img class="wow bounceInLeft" data-wow-delay="1s" src="img/p01.png" alt=""></a>
-          </div>
-        </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="tilt">
-          <section>
-            <a href="#"><img class="wow bounceIn" data-wow-delay="1s" src="img/p02.png" alt=""></a>
-          </section>
-        </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="tilt">
-          <div>
-            <a href="#"><img  class="wow bounceInRight" data-wow-delay="1s" src="img/p03.png" alt=""></a>
-          </div>
-        </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="container wb">
-    <div class="row centered">
-      <br><br>
       <div class="col-lg-8 col-lg-offset-2">
-        <div>
-        <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
-      </div>
-        <p class="wow bounceIn">Horosho delaem</p>
-        <p><br><br></p>
-      </div>
-      <div class="col-lg-2"></div>
-      <div class="col-lg-10 col-lg-offset-1">
-        <div class="wow bounceInDown">
-        <img src="img/munter.png" alt="" class="img-responsive">
-      </div>
+        <h1 class="wow bounceInDown">Mi Norm Cheliki</h1>
+        <h2 class="wow bounceInUp">Normas vse delaem</h2>
       </div>
     </div>
   </div>
-  <div id="r">
-    <div class="container">
-      <div class="row centered">
-        <div class="col-lg-8 col-lg-offset-2">
-          <h4 class="wow bounceInRight">Delaem horosh, s dushoi</h4>
-          <p class="wow bounceInLeft">Tut budet text</p>
+</div>
+<div class="container w">
+  <div class="row centered">
+    <br><br>
+  <div class="col-lg-4">
+    <div class="wow bounceInLeft" data-wow-delay="0.5s">
+      <i class="fa fa-heart"></i><br>
+        <button class="btn btn-link" data-toggle="collapse" data-target="#hide"><h4>Unical Design</h4></button>
+          <div class="collapse" id="hide">
+              <p>Appearance that everyone likes</p>
+          </div>
+    </div>
+  </div>
+    <div class="col-lg-4">
+      <div class="wow bounceIn" data-wow-delay="0.5s">
+      <i class="fa fa-laptop"></i><br/>
+      <button class="btn btn-link" data-toggle="collapse" data-target="#hide1"><h4>Best Code</h4></button>
+        <div class="collapse" id="hide1">
+        <p>The fast workability of the site is ensured</p>
+      </div>
+    </div>
+  </div>
+    <div class="col-lg-4">
+      <div class="wow bounceInRight" data-wow-delay="0.5s">
+      <i class="fa fa-trophy"></i><br>
+        <button class="btn btn-link" data-toggle="collapse" data-target="#hide2"><h4>Achievements</h4></button>
+          <div class="collapse" id="hide2">
+          <p>The best way to achieve the goal that you set before us</p>
         </div>
       </div>
     </div>
   </div>
+  <br><br>
+</div>
+<div id="dg">
+  <div class="container">
+    <div class="row centered">
+      <div class="wow bounceIn" data-wow-delay="1s">
+      <h4>Nashi raboti</h4>
+    </div>
+      <br>
+      <div class="col-lg-4">
+        <div class="tilt">
+        <div>
+          <a href="pages/oldWorks.php"><img class="wow bounceInLeft" data-wow-delay="1s" src="img/p01.png" alt=""></a>
+        </div>
+      </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="tilt">
+        <section>
+          <a href="pages/oldWorks.php"><img class="wow bounceIn" data-wow-delay="1s" src="img/p02.png" alt=""></a>
+        </section>
+      </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="tilt">
+        <div>
+          <a href="pages/oldWorks.php"><img  class="wow bounceInRight" data-wow-delay="1s" src="img/p03.png" alt=""></a>
+        </div>
+      </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="container wb">
+  <div class="row centered">
+    <br><br>
+    <div class="col-lg-8 col-lg-offset-2">
+      <div>
+      <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
+    </div>
+      <p class="wow bounceIn">Horosho delaem</p>
+      <p><br><br></p>
+    </div>
+    <div class="col-lg-2"></div>
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="wow bounceInDown">
+      <img src="img/munter.png" alt="" class="img-responsive">
+    </div>
+    </div>
+  </div>
+</div>
+<div id="r">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h4 class="wow bounceInRight">Delaem horosh, s dushoi</h4>
+        <p class="wow bounceInLeft">Tut budet text</p>
+      </div>
+    </div>
+  </div>
+</div>
   <!--_________________________________________________________
 
                     FOOOOOOOTEEEEEEER

@@ -1,9 +1,21 @@
+<?php
+session_start();
+if (isset($_POST["send"])) {
+  $to = "timeburnersmember@gmail.com";
+  $from = htmlspecialchars ($_POST['from']);
+  $subject = htmlspecialchars ($_POST['subject']);
+  $message = htmlspecialchars ($_POST['message']);
+  $_SESSION["from"] = $from;
+  $_SESSION["subject"] = $subject;
+  $_SESSION["message"] = $message;
+  mail($from, $subject, $message);}
+ ?>
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Test</title>
+  <title>TimeBurnersTeam</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/scripts.js"></script>
@@ -21,6 +33,60 @@
   _________________________________________________________-->
 </head>
 <body>
+  <modal>
+  <div id="myModal" class="modal fade" data-keyboard="false">
+    <div class="modal-dialog">
+      <div class="modal-header">
+         <h3>Feedback</h3>
+      </div>
+      <div class="modal-body">
+        <div class="containter">
+        <form name="feedback" action="" method="post">
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>From:</label>
+            </div>
+            <div class="col-lg-7">
+              <input class="txt1" type="text" name="from" value="<?=$_SESSION["from"]?>"/>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_from?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>Subject:</label>
+            </div>
+            <div class="col-lg-7">
+              <input class="txt1" type="text" name="subject"  value="<?=$_SESSION["subject"]?>"/>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_subject?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>Message:</label>
+            </div>
+            <div class="col-lg-7">
+              <textarea name="message" rows="5" cols="40"></textarea>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_message?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <input class="btn1" type="submit" name="send" value="Send letter"/>
+          </div>
+        </form>
+      </div>
+    </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</modal>
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
@@ -39,7 +105,7 @@
           <li><a href="../index.php" class="wow bounceInDown">Home</a></li>
           <li><a href="about.php" class="wow bounceInDown">About Us</a></li>
           <li><a href="oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
-          <li><a href="writeUs.php" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
+          <li><a href="#myModal" data-toggle="modal" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
         </ul>
       </div>
     </div>
