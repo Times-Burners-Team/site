@@ -107,7 +107,6 @@ if (isset($_POST["send"])) {
       <ul class="nav navbar-nav navbar-right">
         <li><a href="index.php" class="wow bounceInDown">Home</a></li>
         <li><a href="pages/about.php" class="wow bounceInDown">About Us</a></li>
-        <li><a href="php/writeUs.php" class="wow bounceInDown">WriteUs</a></li>
         <li><a href="pages/oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
         <li><a href="#myModal" data-toggle="modal" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
       </ul>
