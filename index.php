@@ -1,42 +1,14 @@
 <?php
 session_start();
-  if(isset($_POST["send"])){
-    $from = htmlspecialchars ($_POST["from"]);
-    $to = htmlspecialchars ($_POST["to"]);
-    $subject = htmlspecialchars ($_POST["subject"]);
-    $message = htmlspecialchars ($_POST["message"]);
-    $_SESSION["from"] = $from;
-    $_SESSION["to"] = $to;
-    $_SESSION["subject"] = $subject;
-    $error_from = "";
-    $error_to = "";
-    $error_subject = "";
-    $error_message = "";
-    $error = false;
-      if($from == "" || !preg_match("/@/", $from)){
-        $error_from = "Enter a valid E-mail";
-        $error = true;
-      }
-      if($to == "" || !preg_match("/@/", $to)){
-        $error_to = "Enter a valid E-mail";
-        $error = true;
-      }
-      if(strlen($subject) == 0){
-        $error_subject = "Enter a message subject";
-        $error = true;
-      }
-      if(strlen($message) == 0){
-        $error_message = "Enter a message";
-        $error = true;
-      }
-      if(!$error){
-        $subject = "=?utf-8?B?".base64_encode($subject)."?=";
-        $headers = "From: $from\r\nReplay-to: $from\r\nContent-type: text/plain; charset=utf-8\r\n";
-        mail($to, $subject, $message, $headers);
-        header ("Location: ../#index.php?send=1");
-        exit;
-      }
-  }
+if (isset($_POST["send"])) {
+  $to = "timeburnersmember@gmail.com";
+  $from = htmlspecialchars ($_POST['from']);
+  $subject = htmlspecialchars ($_POST['subject']);
+  $message = htmlspecialchars ($_POST['message']);
+  $_SESSION["from"] = $from;
+  $_SESSION["subject"] = $subject;
+  $_SESSION["message"] = $message;
+  mail($from, $subject, $message);}
  ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -69,11 +41,6 @@ session_start();
     <div class="modal-dialog">
       <div class="modal-header">
          <h3>Feedback</h3>
-         <?php
-           session_start();
-           if($_GET["send"] == 1)
-           echo "You have successfully sent a message to E-mail:" .$_SESSION["to"];
-          ?>
       </div>
       <div class="modal-body">
         <div class="containter">
@@ -87,17 +54,6 @@ session_start();
             </div>
             <div class="col-lg-3">
               <span style="color:red"><?=$error_from?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>To:</label>
-            </div>
-            <div class="col-lg-7">
-              <input class="txt1" type="text" name="to" value="<?=$_SESSION["to"]?>"/>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_to?></span>
             </div>
           </div>
           <div class="row centered">
