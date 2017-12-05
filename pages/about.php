@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 session_start();
 if (isset($_POST["send"])) {
@@ -10,7 +11,6 @@ if (isset($_POST["send"])) {
   $_SESSION["message"] = $message;
   mail($from, $subject, $message);}
  ?>
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -120,6 +120,7 @@ if (isset($_POST["send"])) {
       </div>
     </div>
   </div>
+
   <!--_________________________________________________________
 
                     FOOOOOOOTEEEEEEER
