@@ -257,7 +257,7 @@ FEEDBACK
 #myModal .modal-dialog{
   border: solid #282828;
   border-radius: 10px;
-
+  width: 35%;
 }
 #myModal .modal-header ,h3{
   color: #818181;
@@ -265,14 +265,48 @@ FEEDBACK
   border-radius: 7px 7px 0px 0px;
 }
 #myModal .modal-body{
-  background-color: #7b7b7b;
+  background-color: #eeeeee;
   text-align: center;
 }
 #myModal .modal-footer{
   background-color: #333;
   padding: 20px;
 }
+form {
+  width: 100%;
+}
+form .container{
+}
+form input .row-centered {
+  width: ;
+}
+form .row-centered, .btn1{
+  margin-top:10px;
+  width: 50%;
 
+}
+form .row-centered, .col-lg-2{
+  text-align: left;
+
+}
+form .row-centered, .col-lg-7{
+  text-align: left;
+  width: 100%;
+
+}
+form .row-centered, .col-lg-3{
+  text-align: left;
+
+
+}
+/*form input{
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+form textarea{
+  margin-top: 5px;
+}*/
 
 /*
 FEEDBACK

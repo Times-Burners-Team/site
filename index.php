@@ -14,26 +14,26 @@ session_start();
     $error_message = "";
     $error = false;
       if($from == "" || !preg_match("/@/", $from)){
-        $error_from = "Please enter a valid E-mail";
+        $error_from = "Enter a valid E-mail";
         $error = true;
       }
       if($to == "" || !preg_match("/@/", $to)){
-        $error_to = "Please enter a valid E-mail";
+        $error_to = "Enter a valid E-mail";
         $error = true;
       }
       if(strlen($subject) == 0){
-        $error_subject = "Please enter a message subject";
+        $error_subject = "Enter a message subject";
         $error = true;
       }
       if(strlen($message) == 0){
-        $error_message = "Please enter a message";
+        $error_message = "Enter a message";
         $error = true;
       }
       if(!$error){
         $subject = "=?utf-8?B?".base64_encode($subject)."?=";
         $headers = "From: $from\r\nReplay-to: $from\r\nContent-type: text/plain; charset=utf-8\r\n";
         mail($to, $subject, $message, $headers);
-        header ("Location: ../index.php?send=1");
+        header ("Location: ../#index.php?send=1");
         exit;
       }
   }
@@ -76,25 +76,60 @@ session_start();
           ?>
       </div>
       <div class="modal-body">
+        <div class="containter">
         <form name="feedback" action="" method="post">
-          <label>From:</label><br/>
-          <input type="text" name="from" value="<?=$_SESSION["from"]?>"/><br/>
-          <span style="color:red"><?=$error_from?></span>
-          <label>To:</label><br/>
-          <input type="text" name="to" value="<?=$_SESSION["to"]?>"/><br/>
-          <span style="color:red"><?=$error_to?></span>
-          <label>Subject:</label><br/>
-          <input type="text" name="subject" value="<?=$_SESSION["subject"]?>"/><br/>
-          <span style="color:red"><?=$error_subject?></span>
-          <label>Message:</label><br/>
-          <textarea name="message" rows="5" cols="20"></textarea><br/>
-          <span style="color:red"><?=$error_message?></span>
-          <input type="submit" name="send" value="Send letter"/>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>From:</label>
+            </div>
+            <div class="col-lg-7">
+              <input class="txt1" type="text" name="from" value="<?=$_SESSION["from"]?>"/>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_from?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>To:</label>
+            </div>
+            <div class="col-lg-7">
+              <input class="txt1" type="text" name="to" value="<?=$_SESSION["to"]?>"/>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_to?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>Subject:</label>
+            </div>
+            <div class="col-lg-7">
+              <input class="txt1" type="text" name="subject"  value="<?=$_SESSION["subject"]?>"/>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_subject?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>Message:</label>
+            </div>
+            <div class="col-lg-7">
+              <textarea name="message" rows="5" cols="40"></textarea>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_message?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <input class="btn1" type="submit" name="send" value="Send letter"/>
+          </div>
         </form>
       </div>
+    </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Send</button>
       </div>
     </div>
   </div>
@@ -125,8 +160,8 @@ session_start();
     <div class="container">
       <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2">
-          <h1 class="wow bounceInDown">Мы норм челики</h1>
-          <h2 class="wow bounceInUp">Нормас всё сделаем</h2>
+          <h1 class="wow bounceInDown">Mi norm Cheliki</h1>
+          <h2 class="wow bounceInUp">Normas vse delaem</h2>
         </div>
       </div>
     </div>
