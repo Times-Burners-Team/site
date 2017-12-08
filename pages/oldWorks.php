@@ -123,7 +123,7 @@ if (isset($_POST["send"])) {
           <div class="wow bounceInLeft" data-wow-delay="0.5s">
           <div id="a1" class="col-lg-3">
             <div class="panel panel-primary">
-              <div class="panel-heading">Интересности</div>
+              <div class="panel-heading">Interesting</div>
                 <div class="text-left" class="panel-body">
                 <ul type="circle">
                   <li>erierjgjesgo</li></br>
@@ -158,7 +158,7 @@ if (isset($_POST["send"])) {
           <div id="a2" class="col-lg-3">
               <div class="wow bounceInRight" data-wow-delay="0.5s">
             <div class="panel panel-primary">
-              <div class="panel-heading">Интересности2</div>
+              <div class="panel-heading">Interesting2</div>
                 <div class="text-left" class="panel-body">
                 <ul type="circle">
                   <li>erierjgjesgo</li></br>
@@ -174,63 +174,6 @@ if (isset($_POST["send"])) {
         </div>
       </div>
       </div>
-    <div id="dg">
-      <div class="container-fluid">
-        <div class="wow bounceInLeft" data-wow-delay="0.5s">
-        <div id="a1" class="col-lg-3">
-          <div class="panel panel-primary">
-            <div class="panel-heading">Интересности3</div>
-              <div class="text-left" class="panel-body">
-              <ul type="circle">
-                <li>erierjgjesgo</li></br>
-                <li>erierjgjesgo</li></br>
-                <li>erierjgjesgo</li></br>
-                <li>erierjgjesgo</li></br>
-              </ul>
-              </div>
-          </div>
-          <div class="row centered">
-        </div>
-      </div>
-      </div>
-        <div id="c1" class="col-lg-3">
-          <div class="tilt">
-            <div class="wow bounceInLeft">
-            <a href="http://vk.com/timeburnersteam" title="Switch to work №1" target="_blank" ><img src="../img/p01.png" alt=""></a>
-          </div>
-          </div>
-         <div class="row centered">
-        </div>
-        </div>
-        <div id="c2" class="col-lg-3">
-          <div class="tilt">
-            <div class="wow bounceInRight">
-              <a href="http://twitter.com" title="Switch to work №2" target="_blank"><img src="../img/p02.png" alt=""></a>
-            </div>
-          </div>
-            <div class="row centered">
-            </div>
-        </div>
-        <div id="a2" class="col-lg-3">
-            <div class="wow bounceInRight" data-wow-delay="0.5s">
-          <div class="panel panel-primary">
-            <div class="panel-heading">Интересности4</div>
-              <div class="text-left" class="panel-body">
-              <ul type="circle">
-                <li>erierjgjesgo</li></br>
-                <li>erierjgjesgo</li></br>
-                <li>erierjgjesgo</li></br>
-                <li>erierjgjesgo</li></br>
-              </ul>
-              </div>
-          </div>
-            <div class="row centered">
-            </div>
-        </div>
-      </div>
-    </div>
-    <hr/>
-  </div>
   </aside>
   <!--_________________________________________________________
 
