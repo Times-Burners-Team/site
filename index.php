@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 session_start();
 if (isset($_POST["send"])) {
@@ -10,7 +11,6 @@ if (isset($_POST["send"])) {
   $_SESSION["message"] = $message;
   mail($from, $subject, $message);}
  ?>
-<!DOCTYPE html>
 <html lang="ru">
 <head>
   <meta charset="utf-8"/>
@@ -99,7 +99,7 @@ if (isset($_POST["send"])) {
         <span class="icon-bar"></span>
       </button>
       <div class="wow bounceInLeft">
-      <a class="navbar-brand" href="index.html">TimeBurnersTeam
+      <a class="navbar-brand" href="index.php">TimeBurnersTeam
       <i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
     </div>
     </div>

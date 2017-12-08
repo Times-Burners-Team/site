@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <?php
 session_start();
 if (isset($_POST["send"])) {
@@ -10,7 +11,6 @@ if (isset($_POST["send"])) {
   $_SESSION["message"] = $message;
   mail($from, $subject, $message);}
  ?>
-<!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
@@ -96,8 +96,7 @@ if (isset($_POST["send"])) {
           <span class="icon-bar"></span>
         </button>
         <div class="wow bounceInLeft">
-        <a class="navbar-brand" href="../index.php">TimeBurnersTeam
-        <i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
+        <a class="navbar-brand" href="../index.php">TimeBurnersTeam<i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
       </div>
       </div>
       <div class="navbar-collapse collapse">
@@ -114,12 +113,13 @@ if (isset($_POST["send"])) {
     <div class="container">
       <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2">
-          <h1></h1>
-          <h2></h2>
+          <h1>The team is founded in 2017</h1>
+          <h2>By group of enthusiasts from Russia.</h2>
         </div>
       </div>
     </div>
   </div>
+
   <!--_________________________________________________________
 
                     FOOOOOOOTEEEEEEER
