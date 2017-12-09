@@ -113,8 +113,8 @@ if (isset($_POST["send"])) {
     <div class="container">
       <div class="row centered">
         <div class="col-lg-8 col-lg-offset-2">
-          <h1>The team is founded in 2017</h1>
-          <h2>By group of enthusiasts from Russia.</h2>
+          <h1 class="wow bounceInDown">The team is founded in 2017</h1>
+          <h2 class="wow bounceInUp">By group of enthusiasts from Russia.</h2>
         </div>
       </div>
     </div>
