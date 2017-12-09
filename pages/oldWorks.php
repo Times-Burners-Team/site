@@ -126,10 +126,10 @@ if (isset($_POST["send"])) {
               <div class="panel-heading">Interesting</div>
                 <div class="text-left" class="panel-body">
                 <ul type="circle">
-                  <li>erierjgjesgo</li></br>
-                  <li>erierjgjesgo</li></br>
-                  <li>erierjgjesgo</li></br>
-                  <li>erierjgjesgo</li></br>
+                  <li>A unique design based on the js libraries</li></br>
+                  <li>Fast and reliable site</li></br>
+                  <li>Convenience xml card</li></br>
+                  <li>Good pastime</li></br>
                 </ul>
                 </div>
             </div>
@@ -161,8 +161,8 @@ if (isset($_POST["send"])) {
               <div class="panel-heading">Interesting2</div>
                 <div class="text-left" class="panel-body">
                 <ul type="circle">
-                  <li>erierjgjesgo</li></br>
-                  <li>erierjgjesgo</li></br>
+                  <li>Comfortable and nice looking design</li></br>
+                  <li>The site is based on the bootstrap libraries</li></br>
                   <li>erierjgjesgo</li></br>
                   <li>erierjgjesgo</li></br>
                 </ul>
