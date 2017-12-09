@@ -123,7 +123,7 @@ if (isset($_POST["send"])) {
           <div class="wow bounceInLeft" data-wow-delay="0.5s">
           <div id="a1" class="col-lg-3">
             <div class="panel panel-primary">
-              <div class="panel-heading">Interesting</div>
+              <div class="panel-heading">Example 1</div>
                 <div class="text-left" class="panel-body">
                 <ul type="circle">
                   <li>A unique design based on the js libraries</li></br>
@@ -158,13 +158,11 @@ if (isset($_POST["send"])) {
           <div id="a2" class="col-lg-3">
               <div class="wow bounceInRight" data-wow-delay="0.5s">
             <div class="panel panel-primary">
-              <div class="panel-heading">Interesting2</div>
+              <div class="panel-heading">Example 2</div>
                 <div class="text-left" class="panel-body">
                 <ul type="circle">
                   <li>Comfortable and nice looking design</li></br>
                   <li>The site is based on the bootstrap libraries</li></br>
-                  <li>erierjgjesgo</li></br>
-                  <li>erierjgjesgo</li></br>
                 </ul>
                 </div>
             </div>
