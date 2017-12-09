@@ -8,11 +8,15 @@ body {
   font-weight: 300;
   font-size: 16px;
   color: #555;
+  height: 100%;
 
   -webkit-font-smoothing: antialiased;
   -webkit-overflow-scrolling: touch;
 
   margin-top: 70px;
+}
+html {
+  height: 100%;
 }
 #fixed{
   width:250px;
@@ -102,6 +106,23 @@ hr {
   -o-background-size: cover;
   background-size: cover;
 }
+#headerwrap1 {
+  background-color: #7b7b7b;
+  margin-top: -10px;
+  padding-top: 20px;
+  text-align: center;
+  background-attachment: relative;
+  background-position: center center;
+  min-height: 500px;
+  width: 100%;
+
+  background-size: 100%;
+
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 
 #headerwrap h1 {
   margin-top: 100px;
@@ -117,6 +138,7 @@ hr {
   letter-spacing: 2px;
   text-transform: uppercase;
 }
+
 
 .w {
   padding-top: 35px;
@@ -215,6 +237,7 @@ hr {
   outline: 0;
 }
 
+
 #f h4{
   color: #999;
 }
@@ -228,11 +251,69 @@ font-size: 50px;
   padding: 30px;
 
 }
+/*
+FEEDBACK
+*/
+#myModal .modal-dialog{
+  border: solid #282828;
+  border-radius: 10px;
+  width: 35%;
+}
+#myModal .modal-header ,h3{
+  color: #818181;
+  background-color: #333;
+  border-radius: 7px 7px 0px 0px;
+}
+#myModal .modal-body{
+  background-color: #eeeeee;
+  text-align: center;
+}
+#myModal .modal-footer{
+  background-color: #333;
+  padding: 20px;
+}
+form {
+  width: 100%;
+}
+form .container{
+}
+form input .row-centered {
+  width: ;
+}
+form .row-centered, .btn1{
+  margin-top:10px;
+  width: 50%;
 
+}
+form .row-centered, .col-lg-2{
+  text-align: left;
+
+}
+form .row-centered, .col-lg-7{
+  text-align: left;
+  width: 100%;
+
+}
+form .row-centered, .col-lg-3{
+  text-align: left;
+
+
+}
+/*form input{
+  margin-top: 5px;
+  border-radius: 10px;
+  outline: none;
+}
+form textarea{
+  margin-top: 5px;
+}*/
+
+/*
+FEEDBACK
+*/
 #f i:hover {
   color: #ff7878;
 }
 
 #ic {
   color: #f85c37
-}
