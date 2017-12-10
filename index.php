@@ -1,11 +1,7 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
-<<<<<<< HEAD
- $to = "timesburnersteam@gmail.com";
-=======
  $to = "timesburnerteam@gmail.com,timeburnersmember@gmail.com";
->>>>>>> 81e427697357b5ac316fb39fe08b9bf1c170a290
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
