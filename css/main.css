@@ -265,6 +265,7 @@ FEEDBACK
 #myModal .modal-body{
   background-color: #eeeeee;
   text-align: center;
+  padding:none!important;
 }
 #myModal .modal-footer{
   background-color: #333;
@@ -272,6 +273,7 @@ FEEDBACK
 }
 form {
   width: 100%;
+  height: 100%
 }
 form .container{
 }
@@ -283,7 +285,7 @@ form .row-centered, .btn1{
   width: 50%;
 
 }
-form .row-centered, .col-lg-2{
+form .row-centered, .col-lg-5{
   text-align: left;
 
 }
@@ -292,19 +294,6 @@ form .row-centered, .col-lg-7{
   width: 100%;
 
 }
-form .row-centered, .col-lg-3{
-  text-align: left;
-
-
-}
-/*form input{
-  margin-top: 5px;
-  border-radius: 10px;
-  outline: none;
-}
-form textarea{
-  margin-top: 5px;
-}*/
 
 /*
 FEEDBACK

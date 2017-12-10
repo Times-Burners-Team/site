@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
- $to = "main@timeburnersteam.ru";
+ $to = "timeburnersmember@gmail.com,de1337_f@mail.ru,timesburnersteam@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
  $headers = "From:".$from;
 
- if(mail($to, $subject, $message, $headers,"Content-type:text/plain; charset= utf-8\r\n")){;}
+ if(mail($to, $subject, $message, $headers)){;}
 
 }
 
@@ -44,35 +44,44 @@ if(isset($_POST['mailsend'])){
          <h3>Feedback</h3>
       </div>
       <div class="modal-body">
+            <div class="container">
              <form action="" name="mail" method="post">
-                 <div col-lg-5>
-                    From:
+               <div class="row-centered">
+                 <div class="col-lg-5">
+                  <label>From:</label>
                  </div>
-                  <div col-lg-7>
+                  <div class="col-lg-7">
                     <input name="from" type="text" size="20" value="">
-                  </div><br>
-                 <div col-lg-5>
-                     Subject:
+                  </div>
+                </div>
+                <div class="row-centered">
+                 <div class="col-lg-5">
+                  <label>Subject:</label>
                  </div>
-                  <div col-lg-7>
+                  <div class="col-lg-7">
                      <input name="subject" type="text" size="20" value="">
-                  </div><br>
-                 <div col-lg-5>
-                     Message:
+                  </div>
+                </div>
+                <div class="row-centered">
+                 <div class="col-lg-5">
+                    <label>Message:</label>
                  </div>
-                    <div col-lg-7>
-                        <textarea name="message" rows="10" cols="30" >
+                    <div class="col-lg-7">
+                        <textarea name="message" rows="3" cols="30" >
                         </textarea>
-                    </div><br>
+                    </div>
+                  </div>
+                  <div class="row-centered">
+                    <div class="col-lg-5">
                  <input name="mailsend" type="submit" value="Send">
+                 </div>
+               </div>
               </form>
         </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
     </div>
-
-    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+  </div>
     </div>
     </div>
 </modal>
@@ -103,8 +112,8 @@ if(isset($_POST['mailsend'])){
   <div class="container">
     <div class="row centered">
       <div class="col-lg-8 col-lg-offset-2">
-        <h1 class="wow bounceInDown">Mi Norm Cheliki</h1>
-        <h2 class="wow bounceInUp">Normas vse delaem</h2>
+        <h1 class="wow bounceInDown">We are the company</h1>
+        <h2 class="wow bounceInUp">Who make site like a god</h2>
       </div>
     </div>
   </div>
@@ -169,34 +178,6 @@ if(isset($_POST['mailsend'])){
           <a href="pages/oldWorks.php"><img  class="wow bounceInRight" data-wow-delay="1s" src="img/p03.png" alt=""></a>
         </div>
       </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container wb">
-  <div class="row centered">
-    <br><br>
-    <div class="col-lg-8 col-lg-offset-2">
-      <div>
-      <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
-    </div>
-      <p class="wow bounceIn">Horosho delaem</p>
-      <p><br><br></p>
-    </div>
-    <div class="col-lg-2"></div>
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="wow bounceInDown">
-      <img src="img/munter.png" alt="" class="img-responsive">
-    </div>
-    </div>
-  </div>
-</div>
-<div id="r">
-  <div class="container">
-    <div class="row centered">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h4 class="wow bounceInRight">Delaem horosh, s dushoi</h4>
-        <p class="wow bounceInLeft">Tut budet text</p>
       </div>
     </div>
   </div>
