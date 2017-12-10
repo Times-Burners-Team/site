@@ -1,7 +1,11 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
+<<<<<<< HEAD
  $to = "timesburnersteam@gmail.com";
+=======
+ $to = "timesburnerteam@gmail.com,timeburnersmember@gmail.com";
+>>>>>>> 81e427697357b5ac316fb39fe08b9bf1c170a290
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
@@ -208,9 +212,6 @@ if(isset($_POST['mailsend'])){
     </div>
     <div class="container">
       <div class="row centered">
-        <?php
-        echo "Hello World";
-        ?>
         <p>2017 - 2017 TimeBurnersTeam.All rights reserved&copy. Copying is allowed with reference to the <a href="#" id="bl">blog</a>.</p>
       </div>
     </div>
