@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <?php
-session_start();
-if (isset($_POST["send"])) {
-  $to = "timeburnersmember@gmail.com";
-  $from = htmlspecialchars ($_POST['from']);
-  $subject = htmlspecialchars ($_POST['subject']);
-  $message = htmlspecialchars ($_POST['message']);
-  $_SESSION["from"] = $from;
-  $_SESSION["subject"] = $subject;
-  $_SESSION["message"] = $message;
-  mail($from, $subject, $message);}
- ?>
+if(isset($_POST['mailsend'])){
+ $to = "main@timeburnersteam.ru";
+ $from = htmlspecialchars(trim($_POST['from']));
+ $subject = htmlspecialchars(trim($_POST['subject']));
+ $message = htmlspecialchars(trim($_POST['message']));
+ $headers = "From:".$from;
+
+ if(mail($to, $subject, $message, $headers,"Content-type:text/plain; charset= utf-8\r\n")){;}
+
+}
+
+?>
 <html lang="ru">
 <head>
   <meta charset="utf-8"/>
