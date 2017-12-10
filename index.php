@@ -1,28 +1,16 @@
 <!DOCTYPE html>
 <?php
-if(isset($_POST["submit"])){
-    if($_POST["vname"] == "" || $_POST["vemail"] == "" || $_POST["sub"] == "" || $_POST["msg"] == ""){
-        echo "Ошибка: Заполните все поля..";
-    }else{
-        $email = $_POST['vemail'];
-        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
-        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
-        if (!$email){
-            echo "Ошибка: Не верный формат Email адреса";
-        }
-        else{
-            $subject = $_POST['sub'];
-            $message = $_POST['msg'];
-            $headers = 'From:'. $email2 . "\r\n";
-            $headers .= 'Cc:'. $email2 . "\r\n";
-            $message = wordwrap($message, 70);
-            if(mail("your_mail@bk.ru", $subject, $message, $headers))
-                echo "Ваше письмо отправлено! Спасибо за ваш отзыв!";
-            else   
-                echo "Ошибка при отправке письма!";
-        }
-    }
+if(isset($_POST['mailsend'])){
+ $to = "timeburnersmember@gmail.com,timeburnersteam@gmail.com";
+ $from = htmlspecialchars(trim($_POST['from']));
+ $subject = htmlspecialchars(trim($_POST['subject']));
+ $message = htmlspecialchars(trim($_POST['message']));
+ $headers = "From:".$from;
+
+ if(mail($to, $subject, $message, $headers)){;}
+
 }
+
 ?>
 <html lang="ru">
 <head>
@@ -56,26 +44,34 @@ if(isset($_POST["submit"])){
          <h3>Feedback</h3>
       </div>
       <div class="modal-body">
-        <div class="container">
-          <div id="feedback">
-            <div class="head">
-              <h3>Feedback</h3>
-              <p>You can sent a message from this form</p>
-            </div>
-            <form action="#" id="form" method="post" name="form">
-              <input name="vname" placeholder="Your Name" type="text" value="">
-              <input name="vemail" placeholder="Your E-mail" type="text" value="">
-              <input name="sub" placeholder="Subject" type="text" value="">
-              <label>You sentences</label>
-              <textarea name="msg" placeholder="Input your message..."></textarea>
-              <input id="send" name="submit"type="submit" value="Send message">
-            </form>
-            <h3><?php include "action_from.php"?></h3>
+             <form action="" name="mail" method="post">
+                 <div col-lg-5>
+                    From:
+                 </div> 
+                  <div col-lg-7>
+                    <input name="from" type="text" size="20" value="">
+                  </div><br>
+                 <div col-lg-5>
+                     Subject: 
+                 </div> 
+                  <div col-lg-7>
+                     <input name="subject" type="text" size="20" value="">
+                  </div><br>
+                 <div col-lg-5>
+                     Message: 
+                 </div>
+                    <div col-lg-7>
+                        <textarea name="message" rows="10" cols="30" >
+                        </textarea>
+                    </div><br>
+                 <input name="mailsend" type="submit" value="Send">
+              </form>
         </div>
-    </div>
-      <div class="modal-footer">
+        <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
+    </div>
+      
     </div>
     </div>
     </div>
