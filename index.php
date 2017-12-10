@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
- $to = "timeburnersmember@gmail.com,de1337_f@mail.ru";
+ $to = "timeburnersmember@gmail.com,de1337_f@mail.ru,timesburnersteam@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
@@ -169,34 +169,6 @@ if(isset($_POST['mailsend'])){
           <a href="pages/oldWorks.php"><img  class="wow bounceInRight" data-wow-delay="1s" src="img/p03.png" alt=""></a>
         </div>
       </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container wb">
-  <div class="row centered">
-    <br><br>
-    <div class="col-lg-8 col-lg-offset-2">
-      <div>
-      <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
-    </div>
-      <p class="wow bounceIn">Horosho delaem</p>
-      <p><br><br></p>
-    </div>
-    <div class="col-lg-2"></div>
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="wow bounceInDown">
-      <img src="img/munter.png" alt="" class="img-responsive">
-    </div>
-    </div>
-  </div>
-</div>
-<div id="r">
-  <div class="container">
-    <div class="row centered">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h4 class="wow bounceInRight">Delaem horosh, s dushoi</h4>
-        <p class="wow bounceInLeft">Tut budet text</p>
       </div>
     </div>
   </div>
