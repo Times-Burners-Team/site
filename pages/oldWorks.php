@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
- $to = "timesburnerteam@gmail.com,timeburnersmember@gmail.com";
+
+ $to = "timeburnersmember@gmail.com,de1337_f@mail.ru,timesburnersteam@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
  $headers = "From:".$from;
+
  if(mail($to, $subject, $message, $headers,"Content-type:text/plain; charset= utf-8\r\n")){;}
+
 }
 ?>
 <html>
@@ -39,28 +42,44 @@ if(isset($_POST['mailsend'])){
       </div>
       <div class="modal-body">
         <div class="containter">
-          <form action="" name="mail" method="post">
-                     <div class="col-lg-5">
-                        From:
-                     </div>
-                      <div class="col-lg-7">
-                        <input name="from" type="text" size="20" value="">
-                      </div><br>
-                     <div class="col-lg-5">
-                         Subject:
-                     </div>
-                      <div class="col-lg-7">
-                         <input name="subject" type="text" size="20" value="">
-                      </div><br>
-                     <div class="col-lg-5">
-                         Message:
-                     </div>
-                        <div class="col-lg-7">
-                            <textarea name="message" rows="10" cols="30" >
-                            </textarea>
-                        </div><br>
-                     <input name="mailsend" type="submit" value="Send">
-                  </form>
+        <form name="feedback" action="" method="post">
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>From:</label>
+            </div>
+            <div class="col-lg-7">
+              <input class="txt1" type="text" name="from" value="<?=$_SESSION["from"]?>"/>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_from?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>Subject:</label>
+            </div>
+            <div class="col-lg-7">
+              <input class="txt1" type="text" name="subject"  value="<?=$_SESSION["subject"]?>"/>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_subject?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <div class="col-lg-2">
+              <label>Message:</label>
+            </div>
+            <div class="col-lg-7">
+              <textarea name="message" rows="5" cols="40"></textarea>
+            </div>
+            <div class="col-lg-3">
+              <span style="color:red"><?=$error_message?></span>
+            </div>
+          </div>
+          <div class="row centered">
+            <input class="btn1" type="submit" name="send" value="Send letter"/>
+          </div>
+        </form>
       </div>
     </div>
       <div class="modal-footer">
@@ -153,6 +172,7 @@ if(isset($_POST['mailsend'])){
           </div>
         </div>
       </div>
+      div.c
       </div>
   </aside>
   <!--_________________________________________________________
