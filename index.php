@@ -187,16 +187,6 @@ if (isset($_POST["send"])) {
     </div>
   </div>
 </div>
-<div class="container wb">
-  <div class="row centered">
-    <br><br>
-    <div class="col-lg-8 col-lg-offset-2">
-      <div>
-      <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
-    </div>
-      <h5 class="wow bounceIn">Horosho delaem</h5>
-      <p><br><br></p>
-    </div>
 
   <!--_________________________________________________________
 
