@@ -1,15 +1,12 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
-
  $to = "timesburnerteam@gmail.com,timeburnersmember@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
  $headers = "From:".$from;
-
  if(mail($to, $subject, $message, $headers,"Content-type:text/plain; charset= utf-8\r\n")){;}
-
 }
 ?>
 <html>
@@ -77,7 +74,7 @@ if(isset($_POST['mailsend'])){
             </div>
           </div>
           <div class="row centered">
-            <input class="btn1" type="submit" name="send" value="Send letter"/>
+            <input name="mailsend" type="submit" value="Send"/>
           </div>
         </form>
       </div>

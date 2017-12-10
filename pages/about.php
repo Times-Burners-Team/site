@@ -76,7 +76,7 @@ if(isset($_POST['mailsend'])){
             </div>
           </div>
           <div class="row centered">
-            <input class="btn1" type="submit" name="send" value="Send letter"/>
+            <input name="mailsend" type="submit" value="Send"/>
           </div>
         </form>
       </div>
