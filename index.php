@@ -209,9 +209,6 @@ if(isset($_POST['mailsend'])){
     </div>
     <div class="container">
       <div class="row centered">
-        <?php
-        echo "Hello World";
-        ?>
         <p>2017 - 2017 TimeBurnersTeam.All rights reserved&copy. Copying is allowed with reference to the <a href="#" id="bl">blog</a>.</p>
       </div>
     </div>
