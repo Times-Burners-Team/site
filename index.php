@@ -1,16 +1,29 @@
 <!DOCTYPE html>
 <?php
-session_start();
-if (isset($_POST["send"])) {
-  $to = "timeburnersmember@gmail.com";
-  $from = htmlspecialchars ($_POST['from']);
-  $subject = htmlspecialchars ($_POST['subject']);
-  $message = htmlspecialchars ($_POST['message']);
-  $_SESSION["from"] = $from;
-  $_SESSION["subject"] = $subject;
-  $_SESSION["message"] = $message;
-  mail($from, $subject, $message);}
- ?>
+if(isset($_POST["submit"])){
+    if($_POST["vname"] == "" || $_POST["vemail"] == "" || $_POST["sub"] == "" || $_POST["msg"] == ""){
+        echo "Ошибка: Заполните все поля..";
+    }else{
+        $email = $_POST['vemail'];
+        $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
+        if (!$email){
+            echo "Ошибка: Не верный формат Email адреса";
+        }
+        else{
+            $subject = $_POST['sub'];
+            $message = $_POST['msg'];
+            $headers = 'From:'. $email2 . "\r\n";
+            $headers .= 'Cc:'. $email2 . "\r\n";
+            $message = wordwrap($message, 70);
+            if(mail("your_mail@bk.ru", $subject, $message, $headers))
+                echo "Ваше письмо отправлено! Спасибо за ваш отзыв!";
+            else   
+                echo "Ошибка при отправке письма!";
+        }
+    }
+}
+?>
 <html lang="ru">
 <head>
   <meta charset="utf-8"/>
@@ -43,52 +56,29 @@ if (isset($_POST["send"])) {
          <h3>Feedback</h3>
       </div>
       <div class="modal-body">
-        <div class="containter">
-        <form name="feedback" action="" method="post">
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>From:</label>
+        <div class="container">
+          <div id="feedback">
+            <div class="head">
+              <h3>Feedback</h3>
+              <p>You can sent a message from this form</p>
             </div>
-            <div class="col-lg-7">
-              <input class="txt1" type="text" name="from" value="<?=$_SESSION["from"]?>"/>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_from?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>Subject:</label>
-            </div>
-            <div class="col-lg-7">
-              <input class="txt1" type="text" name="subject"  value="<?=$_SESSION["subject"]?>"/>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_subject?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>Message:</label>
-            </div>
-            <div class="col-lg-7">
-              <textarea name="message" rows="5" cols="40"></textarea>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_message?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <input class="btn1" type="submit" name="send" value="Send letter"/>
-          </div>
-        </form>
-      </div>
+            <form action="#" id="form" method="post" name="form">
+              <input name="vname" placeholder="Your Name" type="text" value="">
+              <input name="vemail" placeholder="Your E-mail" type="text" value="">
+              <input name="sub" placeholder="Subject" type="text" value="">
+              <label>You sentences</label>
+              <textarea name="msg" placeholder="Input your message..."></textarea>
+              <input id="send" name="submit"type="submit" value="Send message">
+            </form>
+            <h3><?php include "action_from.php"?></h3>
+        </div>
     </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
-  </div>
+    </div>
+    </div>
 </modal>
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
