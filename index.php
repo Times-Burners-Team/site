@@ -160,7 +160,7 @@ if (isset($_POST["send"])) {
   <div class="container">
     <div class="row centered">
       <div class="wow bounceIn" data-wow-delay="1s">
-      <h4>Nashi raboti</h4>
+      <h4>Examples</h4>
     </div>
       <br>
       <div class="col-lg-4">
@@ -194,27 +194,10 @@ if (isset($_POST["send"])) {
       <div>
       <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
     </div>
-      <p class="wow bounceIn">Horosho delaem</p>
+      <h5 class="wow bounceIn">Horosho delaem</h5>
       <p><br><br></p>
     </div>
-    <div class="col-lg-2"></div>
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="wow bounceInDown">
-      <img src="img/munter.png" alt="" class="img-responsive">
-    </div>
-    </div>
-  </div>
-</div>
-<div id="r">
-  <div class="container">
-    <div class="row centered">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h4 class="wow bounceInRight">Delaem horosh, s dushoi</h4>
-        <p class="wow bounceInLeft">Tut budet text</p>
-      </div>
-    </div>
-  </div>
-</div>
+
   <!--_________________________________________________________
 
                     FOOOOOOOTEEEEEEER
@@ -222,7 +205,6 @@ if (isset($_POST["send"])) {
   <footer id="f">
     <div class="container">
       <div class="row centered"><hr/>
-        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
         <div class="col-lg-2 col-lg-offset-1">
         </div>
       </div>
