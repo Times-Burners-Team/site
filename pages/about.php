@@ -42,22 +42,22 @@ if(isset($_POST['mailsend'])){
       <div class="modal-body">
         <div class="containter">
           <form action="" name="mail" method="post">
-                     <div col-lg-5>
+                     <div class="col-lg-5">
                         From:
                      </div>
-                      <div col-lg-7>
+                      <div class="col-lg-7">
                         <input name="from" type="text" size="20" value="">
                       </div><br>
-                     <div col-lg-5>
+                     <div class="col-lg-5">
                          Subject:
                      </div>
-                      <div col-lg-7>
+                      <div class="col-lg-7">
                          <input name="subject" type="text" size="20" value="">
                       </div><br>
-                     <div col-lg-5>
+                     <div class="col-lg-5">
                          Message:
                      </div>
-                        <div col-lg-7>
+                        <div class="col-lg-7">
                             <textarea name="message" rows="10" cols="30" >
                             </textarea>
                         </div><br>

@@ -45,27 +45,27 @@ if(isset($_POST['mailsend'])){
       <div class="modal-body">
         <div class="containter">
           <form action="" name="mail" method="post">
-                   <div col-lg-5>
-                      From:
-                   </div>
-                    <div col-lg-7>
-                      <input name="from" type="text" size="20" value="">
-                    </div><br>
-                   <div col-lg-5>
-                       Subject:
-                   </div>
-                    <div col-lg-7>
-                       <input name="subject" type="text" size="20" value="">
-                    </div><br>
-                   <div col-lg-5>
-                       Message:
-                   </div>
-                      <div col-lg-7>
-                          <textarea name="message" rows="10" cols="30" >
-                          </textarea>
+                     <div class="col-lg-5">
+                        From:
+                     </div>
+                      <div class="col-lg-7">
+                        <input name="from" type="text" size="20" value="">
                       </div><br>
-                   <input name="mailsend" type="submit" value="Send">
-                </form>
+                     <div class="col-lg-5">
+                         Subject:
+                     </div>
+                      <div class="col-lg-7">
+                         <input name="subject" type="text" size="20" value="">
+                      </div><br>
+                     <div class="col-lg-5">
+                         Message:
+                     </div>
+                        <div class="col-lg-7">
+                            <textarea name="message" rows="10" cols="30" >
+                            </textarea>
+                        </div><br>
+                     <input name="mailsend" type="submit" value="Send">
+                  </form>
       </div>
     </div>
       <div class="modal-footer">
