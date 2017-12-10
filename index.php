@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
- $to = "timeburnersteam@gmail.com";
+ $to = "timesburnerteam@gmail.com,timeburnersmember@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
