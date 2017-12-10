@@ -41,7 +41,7 @@ if(isset($_POST['mailsend'])){
       </div>
       <div class="modal-body">
         <div class="containter">
-        <form name="feedback" action="" method="post">
+        <form action="" name="mail" method="post">
           <div class="row centered">
             <div class="col-lg-2">
               <label>From:</label>
