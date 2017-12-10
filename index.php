@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
- $to = "timeburnersmember@gmail.com,timeburnersteam@gmail.com";
+ $to = "main@timeburnersteam.ru";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
  $headers = "From:".$from;
 
- if(mail($to, $subject, $message, $headers)){;}
+ if(mail($to, $subject, $message, $headers,"Content-type:text/plain; charset= utf-8\r\n")){;}
 
 }
 
@@ -47,18 +47,18 @@ if(isset($_POST['mailsend'])){
              <form action="" name="mail" method="post">
                  <div col-lg-5>
                     From:
-                 </div> 
+                 </div>
                   <div col-lg-7>
                     <input name="from" type="text" size="20" value="">
                   </div><br>
                  <div col-lg-5>
-                     Subject: 
-                 </div> 
+                     Subject:
+                 </div>
                   <div col-lg-7>
                      <input name="subject" type="text" size="20" value="">
                   </div><br>
                  <div col-lg-5>
-                     Message: 
+                     Message:
                  </div>
                     <div col-lg-7>
                         <textarea name="message" rows="10" cols="30" >
@@ -71,7 +71,7 @@ if(isset($_POST['mailsend'])){
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
-      
+
     </div>
     </div>
     </div>
