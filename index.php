@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
- $to = "timesburnerteam@gmail.com,timeburnersmember@gmail.com";
+ $to = "timeburnersmember@gmail.com,timeburnersteam@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
  $headers = "From:".$from;
 
- if(mail($to, $subject, $message, $headers,"Content-type:text/plain; charset= utf-8\r\n")){;}
+ if(mail($to, $subject, $message, $headers)){;}
 
 }
+
 ?>
 <html lang="ru">
 <head>
@@ -43,36 +44,37 @@ if(isset($_POST['mailsend'])){
          <h3>Feedback</h3>
       </div>
       <div class="modal-body">
-        <div class="containter">
-          <form action="" name="mail" method="post">
-                     <div class="col-lg-5">
-                        From:
-                     </div>
-                      <div class="col-lg-7">
-                        <input name="from" type="text" size="20" value="">
-                      </div><br>
-                     <div class="col-lg-5">
-                         Subject:
-                     </div>
-                      <div class="col-lg-7">
-                         <input name="subject" type="text" size="20" value="">
-                      </div><br>
-                     <div class="col-lg-5">
-                         Message:
-                     </div>
-                        <div class="col-lg-7">
-                            <textarea name="message" rows="10" cols="30" >
-                            </textarea>
-                        </div><br>
-                     <input name="mailsend" type="submit" value="Send">
-                  </form>
-      </div>
-    </div>
-      <div class="modal-footer">
+             <form action="" name="mail" method="post">
+                 <div col-lg-5>
+                    From:
+                 </div>
+                  <div col-lg-7>
+                    <input name="from" type="text" size="20" value="">
+                  </div><br>
+                 <div col-lg-5>
+                     Subject:
+                 </div>
+                  <div col-lg-7>
+                     <input name="subject" type="text" size="20" value="">
+                  </div><br>
+                 <div col-lg-5>
+                     Message:
+                 </div>
+                    <div col-lg-7>
+                        <textarea name="message" rows="10" cols="30" >
+                        </textarea>
+                    </div><br>
+                 <input name="mailsend" type="submit" value="Send">
+              </form>
+        </div>
+        <div class="modal-footer">
         <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
       </div>
     </div>
-  </div>
+
+    </div>
+    </div>
+    </div>
 </modal>
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -144,7 +146,7 @@ if(isset($_POST['mailsend'])){
   <div class="container">
     <div class="row centered">
       <div class="wow bounceIn" data-wow-delay="1s">
-      <h4>Examples</h4>
+      <h4>Nashi raboti</h4>
     </div>
       <br>
       <div class="col-lg-4">
@@ -171,7 +173,34 @@ if(isset($_POST['mailsend'])){
     </div>
   </div>
 </div>
-
+<div class="container wb">
+  <div class="row centered">
+    <br><br>
+    <div class="col-lg-8 col-lg-offset-2">
+      <div>
+      <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
+    </div>
+      <p class="wow bounceIn">Horosho delaem</p>
+      <p><br><br></p>
+    </div>
+    <div class="col-lg-2"></div>
+    <div class="col-lg-10 col-lg-offset-1">
+      <div class="wow bounceInDown">
+      <img src="img/munter.png" alt="" class="img-responsive">
+    </div>
+    </div>
+  </div>
+</div>
+<div id="r">
+  <div class="container">
+    <div class="row centered">
+      <div class="col-lg-8 col-lg-offset-2">
+        <h4 class="wow bounceInRight">Delaem horosh, s dushoi</h4>
+        <p class="wow bounceInLeft">Tut budet text</p>
+      </div>
+    </div>
+  </div>
+</div>
   <!--_________________________________________________________
 
                     FOOOOOOOTEEEEEEER
@@ -179,6 +208,7 @@ if(isset($_POST['mailsend'])){
   <footer id="f">
     <div class="container">
       <div class="row centered"><hr/>
+        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
         <div class="col-lg-2 col-lg-offset-1">
         </div>
       </div>
@@ -192,6 +222,9 @@ if(isset($_POST['mailsend'])){
     </div>
     <div class="container">
       <div class="row centered">
+        <?php
+        echo "Hello World";
+        ?>
         <p>2017 - 2017 TimeBurnersTeam.All rights reserved&copy. Copying is allowed with reference to the <a href="#" id="bl">blog</a>.</p>
       </div>
     </div>
