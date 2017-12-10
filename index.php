@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <?php
 if(isset($_POST['mailsend'])){
- $to = "timeburnersteam@gmail.com";
+ $to = "timesburnersteam@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
  $subject = htmlspecialchars(trim($_POST['subject']));
  $message = htmlspecialchars(trim($_POST['message']));
@@ -10,7 +10,6 @@ if(isset($_POST['mailsend'])){
  if(mail($to, $subject, $message, $headers,"Content-type:text/plain; charset= utf-8\r\n")){;}
 
 }
-
 ?>
 <html lang="ru">
 <head>
