@@ -1,16 +1,17 @@
 <!DOCTYPE html>
 <?php
-session_start();
-if (isset($_POST["send"])) {
-  $to = "timeburnersmember@gmail.com";
-  $from = htmlspecialchars ($_POST['from']);
-  $subject = htmlspecialchars ($_POST['subject']);
-  $message = htmlspecialchars ($_POST['message']);
-  $_SESSION["from"] = $from;
-  $_SESSION["subject"] = $subject;
-  $_SESSION["message"] = $message;
-  mail($from, $subject, $message);}
- ?>
+if(isset($_POST['mailsend'])){
+ $to = "timeburnersmember@gmail.com,de1337_f@mail.ru,timesburnersteam@gmail.com";
+ $from = htmlspecialchars(trim($_POST['from']));
+ $subject = htmlspecialchars(trim($_POST['subject']));
+ $message = htmlspecialchars(trim($_POST['message']));
+ $headers = "From:".$from;
+
+ if(mail($to, $subject, $message, $headers)){;}
+
+}
+
+?>
 <html lang="ru">
 <head>
   <meta charset="utf-8"/>
@@ -43,52 +44,46 @@ if (isset($_POST["send"])) {
          <h3>Feedback</h3>
       </div>
       <div class="modal-body">
-        <div class="containter">
-        <form name="feedback" action="" method="post">
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>From:</label>
-            </div>
-            <div class="col-lg-7">
-              <input class="txt1" type="text" name="from" value="<?=$_SESSION["from"]?>"/>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_from?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>Subject:</label>
-            </div>
-            <div class="col-lg-7">
-              <input class="txt1" type="text" name="subject"  value="<?=$_SESSION["subject"]?>"/>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_subject?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>Message:</label>
-            </div>
-            <div class="col-lg-7">
-              <textarea name="message" rows="5" cols="40"></textarea>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_message?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <input class="btn1" type="submit" name="send" value="Send letter"/>
-          </div>
-        </form>
-      </div>
+            <div class="container">
+             <form action="" name="mail" method="post">
+               <div class="row-centered">
+                 <div class="col-lg-5">
+                  <label>From:</label>
+                 </div>
+                  <div class="col-lg-7">
+                    <input name="from" type="text" size="20" value="">
+                  </div>
+                </div>
+                <div class="row-centered">
+                 <div class="col-lg-5">
+                  <label>Subject:</label>
+                 </div>
+                  <div class="col-lg-7">
+                     <input name="subject" type="text" size="20" value="">
+                  </div>
+                </div>
+                <div class="row-centered">
+                 <div class="col-lg-5">
+                    <label>Message:</label>
+                 </div>
+                    <div class="col-lg-7">
+                        <textarea name="message" rows="3" cols="30" >
+                        </textarea>
+                    </div>
+                  </div>
+                  <div class="row-centered">
+                    <div class="col-lg-5">
+                 <input name="mailsend" type="submit" value="Send">
+                 </div>
+               </div>
+              </form>
+        </div>
     </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
   </div>
+    </div>
+    </div>
 </modal>
 <div class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
@@ -117,8 +112,8 @@ if (isset($_POST["send"])) {
   <div class="container">
     <div class="row centered">
       <div class="col-lg-8 col-lg-offset-2">
-        <h1 class="wow bounceInDown">Mi Norm Cheliki</h1>
-        <h2 class="wow bounceInUp">Normas vse delaem</h2>
+        <h1 class="wow bounceInDown">We are the company</h1>
+        <h2 class="wow bounceInUp">Who make site like a god</h2>
       </div>
     </div>
   </div>
@@ -183,34 +178,6 @@ if (isset($_POST["send"])) {
           <a href="pages/oldWorks.php"><img  class="wow bounceInRight" data-wow-delay="1s" src="img/p03.png" alt=""></a>
         </div>
       </div>
-      </div>
-    </div>
-  </div>
-</div>
-<div class="container wb">
-  <div class="row centered">
-    <br><br>
-    <div class="col-lg-8 col-lg-offset-2">
-      <div>
-      <div class="wow bounceIn"><h4>Mi delaem saity</h4></div>
-    </div>
-      <p class="wow bounceIn">Horosho delaem</p>
-      <p><br><br></p>
-    </div>
-    <div class="col-lg-2"></div>
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="wow bounceInDown">
-      <img src="img/munter.png" alt="" class="img-responsive">
-    </div>
-    </div>
-  </div>
-</div>
-<div id="r">
-  <div class="container">
-    <div class="row centered">
-      <div class="col-lg-8 col-lg-offset-2">
-        <h4 class="wow bounceInRight">Delaem horosh, s dushoi</h4>
-        <p class="wow bounceInLeft">Tut budet text</p>
       </div>
     </div>
   </div>
