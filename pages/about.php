@@ -20,6 +20,7 @@ if(isset($_POST['mailsend'])){
   <script src="../js/bootstrap.min.js"></script>
   <script src="../js/scripts.js"></script>
   <script src="../js/wow.min.js"></script>
+  </script>
   <script>
     new WOW().init();
   </script>
@@ -113,6 +114,48 @@ if(isset($_POST['mailsend'])){
       </div>
     </div>
   </div>
+  <aside>
+    <div class="container">
+  <div id="cont2"class="container">
+      <img src="../img/me1.jpg" alt="">
+      <div id="content" class="row-centered">
+        <div class="inf">
+          <h1>About Me:</h1>
+          <p>fhq9efqe0fhqeuhfo0qehjfqief</p>
+          <p>uhf9weh9guh249-guhw9-guhuawhgwurgjhawrogjh</p>
+          <p>orejhigeorshg90reuhnmo</p>
+        </div>
+      </div>
+  </div>
+      </div>
+      <div class="container">
+          <div id="cont2"class="container">
+              <img src="../img/me1.jpg" alt="">
+              <div id="content" class="row-centered">
+                <div class="inf">
+                  <h1>About Me:</h1>
+                  <p>fhq9efqe0fhqeuhfo0qehjfqief</p>
+                  <p>uhf9weh9guh249-guhw9-guhuawhgwurgjhawrogjh</p>
+                  <p>orejhigeorshg90reuhnmo</p>
+                </div>
+              </div>
+          </div>
+        </div>
+        <div class="container">
+            <div id="cont2"class="container">
+                <img src="../img/me1.jpg" alt="">
+                <div id="content" class="row-centered">
+                  <div class="inf">
+                    <h1>About Me:</h1>
+                    <p>fhq9efqe0fhqeuhfo0qehjfqief</p>
+                    <p>uhf9weh9guh249-guhw9-guhuawhgwurgjhawrogjh</p>
+                    <p>orejhigeorshg90reuhnmo</p>
+                  </div>
+                </div>
+            </div>
+          </div>
+</aside>
+
 
   <!--_________________________________________________________
 

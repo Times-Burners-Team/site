@@ -155,7 +155,7 @@ if(isset($_POST['mailsend'])){
   <div class="container">
     <div class="row centered">
       <div class="wow bounceIn" data-wow-delay="1s">
-      <h4>Our Works</h4>
+      <h4>Nashi raboti</h4>
     </div>
       <br>
       <div class="col-lg-4">
