@@ -2,7 +2,7 @@
 <?php
 session_start();
 if (isset($_POST["send"])) {
-  $to = "timeburnersmember@gmail.com";
+  $to = "timeburnersteam@gmail.com";
   $from = htmlspecialchars ($_POST['from']);
   $subject = htmlspecialchars ($_POST['subject']);
   $message = htmlspecialchars ($_POST['message']);
