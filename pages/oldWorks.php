@@ -176,12 +176,6 @@ if(isset($_POST['mailsend'])){
                     FOOOOOOOTEEEEEEER
   _________________________________________________________-->
   <footer id="f">
-    <div class="container">
-      <div class="row centered"><hr/>
-        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
-        <div class="col-lg-2 col-lg-offset-1">
-        </div>
-      </div>
     </div>
     <div class="container">
       <div class="row centered">

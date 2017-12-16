@@ -188,13 +188,6 @@ if(isset($_POST['mailsend'])){
   _________________________________________________________-->
   <footer id="f">
     <div class="container">
-      <div class="row centered"><hr/>
-        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
-        <div class="col-lg-2 col-lg-offset-1">
-        </div>
-      </div>
-    </div>
-    <div class="container">
       <div class="row centered">
         <a href="#"><i id="i" class="fa fa-twitter" ></i></a>
         <a href="#"><i id="i" class="fa fa-facebook"></i></a>
@@ -203,9 +196,6 @@ if(isset($_POST['mailsend'])){
     </div>
     <div class="container">
       <div class="row centered">
-        <?php
-        echo "Hello World";
-        ?>
         <p>2017 - 2017 TimeBurnersTeam.All rights reserved&copy. Copying is allowed with reference to the <a href="#" id="bl">blog</a>.</p>
       </div>
     </div>

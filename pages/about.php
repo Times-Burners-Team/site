@@ -29,6 +29,9 @@ if(isset($_POST['mailsend'])){
   <link rel="stylesheet" href="../css/font-awesome.min.css">
   <link rel="stylesheet" href="../css/main.css">
   <link rel="stylesheet" href="../css/animate.css">
+  <link rel="stylesheet" href="../css/width425px.css">
+  <link rel="stylesheet" href="../css/width375px.css">
+  <link rel="stylesheet" href="../css/width320px.css">
   <!--_________________________________________________________
 
                     HEEEEEAAAAADEEEEER
@@ -117,44 +120,51 @@ if(isset($_POST['mailsend'])){
   </div>
   <aside>
     <div class="container">
-  <div id="cont2"class="container">
-      <img src="../img/me1.jpg" alt="">
-      <div id="content" class="row-centered">
-        <div class="inf">
-          <h1>About Me:</h1>
-          <p>fhq9efqe0fhqeuhfo0qehjfqief</p>
-          <p>uhf9weh9guh249-guhw9-guhuawhgwurgjhawrogjh</p>
-          <p>orejhigeorshg90reuhnmo</p>
-        </div>
-      </div>
-  </div>
-      </div>
-      <div class="container">
+        <div class="wow bounceInDown">
           <div id="cont2"class="container">
-              <img src="../img/me1.jpg" alt="">
+              <img src="../img/me3.jpg" alt="">
               <div id="content" class="row-centered">
                 <div class="inf">
-                  <h1>About Me:</h1>
-                  <p>fhq9efqe0fhqeuhfo0qehjfqief</p>
-                  <p>uhf9weh9guh249-guhw9-guhuawhgwurgjhawrogjh</p>
-                  <p>orejhigeorshg90reuhnmo</p>
+                  <h1>Fomin Dmitrii</h1>
+                  <p>He has organized group of enthusiasts people</p>
+                  <p>Skills</p>
+                  <p>HTML5, PHP, XML, XSL, WordPress,</p>
+                  <p>CSS3, MySQL, XHTML.
                 </div>
               </div>
           </div>
         </div>
-        <div class="container">
+      </div>
+    <div class="container">
+        <div class="wow bounceIn">
+          <div id="cont2"class="container">
+              <img src="../img/me1.jpg" alt="">
+              <div id="content" class="row-centered">
+                <div class="inf">
+                  <h1>Stacenko Kirill</h1>
+                  <p>He is junior Web-Developer</p>
+                  <p>Skills:</p>
+                  <p>PHP, HTML5, CSS3, XML, XSL,</p>
+                  <p>XHTML, MySQL, MySQL Administration.</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+          <div class="wow bounceInUp">
             <div id="cont2"class="container">
-                <img src="../img/me1.jpg" alt="">
+                <img src="../img/me2.jpg" alt="">
                 <div id="content" class="row-centered">
                   <div class="inf">
-                    <h1>About Me:</h1>
-                    <p>fhq9efqe0fhqeuhfo0qehjfqief</p>
-                    <p>uhf9weh9guh249-guhw9-guhuawhgwurgjhawrogjh</p>
-                    <p>orejhigeorshg90reuhnmo</p>
+                    <h1>Maximov Kirill</h1>
+                    <p>He is junior designer</p>
+                    <p>Who not designed this site.</p>
                   </div>
                 </div>
             </div>
           </div>
+        </div>
 </aside>
 
 
@@ -163,11 +173,6 @@ if(isset($_POST['mailsend'])){
                     FOOOOOOOTEEEEEEER
   _________________________________________________________-->
   <footer id="f">
-    <div class="container">
-      <div class="row centered"><hr/>
-        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
-      </div>
-    </div>
     <div class="container">
       <div class="row centered">
         <a href="#"><i id="i" class="fa fa-twitter" ></i></a>
@@ -181,5 +186,5 @@ if(isset($_POST['mailsend'])){
       </div>
     </div>
   </footer>
-</body>
-</html>
+  </body>
+  </html>
