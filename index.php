@@ -1,18 +1,5 @@
 <!DOCTYPE html>
 <?php
-<<<<<<< HEAD
-session_start();
-if (isset($_POST["send"])) {
-  $to = "timeburnersteam@gmail.com";
-  $from = htmlspecialchars ($_POST['from']);
-  $subject = htmlspecialchars ($_POST['subject']);
-  $message = htmlspecialchars ($_POST['message']);
-  $_SESSION["from"] = $from;
-  $_SESSION["subject"] = $subject;
-  $_SESSION["message"] = $message;
-  mail($from, $subject, $message);}
- ?>
-=======
 if(isset($_POST['mailsend'])){
  $to = "timeburnersmember@gmail.com,de1337_f@mail.ru,timesburnersteam@gmail.com";
  $from = htmlspecialchars(trim($_POST['from']));
@@ -25,7 +12,6 @@ if(isset($_POST['mailsend'])){
 }
 
 ?>
->>>>>>> b941092296f831a954ae9a28287f091bf16c3265
 <html lang="ru">
 <head>
   <meta charset="utf-8"/>
@@ -58,35 +44,44 @@ if(isset($_POST['mailsend'])){
          <h3>Feedback</h3>
       </div>
       <div class="modal-body">
-             <form action="" name="mail" method="post">
-                 <div col-lg-5>
-                    From:
+            <div class="container">
+              <form action="" name="mail" method="post">
+                <div class="row-centered">
+                  <div class="col-lg-5">
+                   <label>From:</label>
+                  </div>
+                   <div class="col-lg-7">
+                     <input name="from" type="text" size="20" value="">
+                   </div>
                  </div>
-                  <div col-lg-7>
-                    <input name="from" type="text" size="20" value="">
-                  </div><br>
-                 <div col-lg-5>
-                     Subject:
+                 <div class="row-centered">
+                  <div class="col-lg-5">
+                   <label>Subject:</label>
+                  </div>
+                   <div class="col-lg-7">
+                      <input name="subject" type="text" size="20" value="">
+                   </div>
                  </div>
-                  <div col-lg-7>
-                     <input name="subject" type="text" size="20" value="">
-                  </div><br>
-                 <div col-lg-5>
-                     Message:
-                 </div>
-                    <div col-lg-7>
-                        <textarea name="message" rows="10" cols="30" >
-                        </textarea>
-                    </div><br>
-                 <input name="mailsend" type="submit" value="Send">
-              </form>
+                 <div class="row-centered">
+                  <div class="col-lg-5">
+                     <label>Message:</label>
+                  </div>
+                     <div class="col-lg-7">
+                         <textarea name="message" rows="3" cols="25" >
+                         </textarea>
+                     </div>
+                   </div>
+                   <div class="row-centered">
+                     <div class="col-lg-5">
+                  <input name="mailsend" type="submit" value="Send">
+                  </div>
+                </div>
+               </form>
         </div>
-        <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
     </div>
-
-    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+  </div>
     </div>
     </div>
 </modal>
@@ -117,8 +112,8 @@ if(isset($_POST['mailsend'])){
   <div class="container">
     <div class="row centered">
       <div class="col-lg-8 col-lg-offset-2">
-        <h1 class="wow bounceInDown">Mi Norm Cheliki</h1>
-        <h2 class="wow bounceInUp">Normas vse delaem</h2>
+        <h1 class="wow bounceInDown">We are the company</h1>
+        <h2 class="wow bounceInUp">Who make site like a god</h2>
       </div>
     </div>
   </div>
@@ -193,13 +188,6 @@ if(isset($_POST['mailsend'])){
   _________________________________________________________-->
   <footer id="f">
     <div class="container">
-      <div class="row centered"><hr/>
-        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
-        <div class="col-lg-2 col-lg-offset-1">
-        </div>
-      </div>
-    </div>
-    <div class="container">
       <div class="row centered">
         <a href="#"><i id="i" class="fa fa-twitter" ></i></a>
         <a href="#"><i id="i" class="fa fa-facebook"></i></a>
@@ -208,9 +196,6 @@ if(isset($_POST['mailsend'])){
     </div>
     <div class="container">
       <div class="row centered">
-        <?php
-        echo "Hello World";
-        ?>
         <p>2017 - 2017 TimeBurnersTeam.All rights reserved&copy. Copying is allowed with reference to the <a href="#" id="bl">blog</a>.</p>
       </div>
     </div>

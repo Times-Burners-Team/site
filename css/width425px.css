@@ -1,0 +1,22 @@
+@media (max-width: 425px){
+  aside #cont2{
+    width: 80%;
+    height: 400px!important;
+    margin:20% 0% 10% 10%!important;
+    background-color: #F1EFEF!important;
+  }
+  aside .inf{
+    margin: 225px 0px 0px 0px!important;
+    width: 250px!important;
+    height: 300px!important;
+    text-align: left!important;
+  }
+  aside #cont2 img{
+    width: 120px!important;
+    margin: -64px 0px 0px 28%!important;
+  }
+  aside #cont2 {
+    border-left: 0px!important;
+    border-top: 5px solid rgb(2, 144, 179)!important;
+  }
+}

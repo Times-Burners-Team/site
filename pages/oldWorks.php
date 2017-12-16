@@ -41,52 +41,46 @@ if(isset($_POST['mailsend'])){
          <h3>Feedback</h3>
       </div>
       <div class="modal-body">
-        <div class="containter">
-        <form name="feedback" action="" method="post">
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>From:</label>
-            </div>
-            <div class="col-lg-7">
-              <input class="txt1" type="text" name="from" value="<?=$_SESSION["from"]?>"/>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_from?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>Subject:</label>
-            </div>
-            <div class="col-lg-7">
-              <input class="txt1" type="text" name="subject"  value="<?=$_SESSION["subject"]?>"/>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_subject?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <div class="col-lg-2">
-              <label>Message:</label>
-            </div>
-            <div class="col-lg-7">
-              <textarea name="message" rows="5" cols="40"></textarea>
-            </div>
-            <div class="col-lg-3">
-              <span style="color:red"><?=$error_message?></span>
-            </div>
-          </div>
-          <div class="row centered">
-            <input class="btn1" type="submit" name="send" value="Send letter"/>
-          </div>
-        </form>
-      </div>
+            <div class="container">
+              <form action="" name="mail" method="post">
+                <div class="row-centered">
+                  <div class="col-lg-5">
+                   <label>From:</label>
+                  </div>
+                   <div class="col-lg-7">
+                     <input name="from" type="text" size="20" value="">
+                   </div>
+                 </div>
+                 <div class="row-centered">
+                  <div class="col-lg-5">
+                   <label>Subject:</label>
+                  </div>
+                   <div class="col-lg-7">
+                      <input name="subject" type="text" size="20" value="">
+                   </div>
+                 </div>
+                 <div class="row-centered">
+                  <div class="col-lg-5">
+                     <label>Message:</label>
+                  </div>
+                     <div class="col-lg-7">
+                         <textarea name="message" rows="3" cols="25" >
+                         </textarea>
+                     </div>
+                   </div>
+                   <div class="row-centered">
+                     <div class="col-lg-5">
+                  <input name="mailsend" type="submit" value="Send">
+                  </div>
+                </div>
+               </form>
+        </div>
     </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
-      </div>
-    </div>
+    <div class="modal-footer">
+    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
   </div>
+    </div>
+    </div>
 </modal>
   <header>
     <div class="navbar navbar-inverse navbar-fixed-top">
@@ -172,7 +166,9 @@ if(isset($_POST['mailsend'])){
           </div>
         </div>
       </div>
-      div.c
+      <div class="container">
+        <br><br><br><br><br><br><br><br><br>
+    </div>
       </div>
   </aside>
   <!--_________________________________________________________
@@ -180,12 +176,6 @@ if(isset($_POST['mailsend'])){
                     FOOOOOOOTEEEEEEER
   _________________________________________________________-->
   <footer id="f">
-    <div class="container">
-      <div class="row centered"><hr/>
-        <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
-        <div class="col-lg-2 col-lg-offset-1">
-        </div>
-      </div>
     </div>
     <div class="container">
       <div class="row centered">
