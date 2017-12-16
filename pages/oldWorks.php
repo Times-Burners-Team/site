@@ -42,38 +42,38 @@ if(isset($_POST['mailsend'])){
       </div>
       <div class="modal-body">
             <div class="container">
-             <form action="" name="mail" method="post">
-               <div class="row-centered">
-                 <div class="col-lg-5">
-                  <label>From:</label>
+              <form action="" name="mail" method="post">
+                <div class="row-centered">
+                  <div class="col-lg-5">
+                   <label>From:</label>
+                  </div>
+                   <div class="col-lg-7">
+                     <input name="from" type="text" size="20" value="">
+                   </div>
                  </div>
-                  <div class="col-lg-7">
-                    <input name="from" type="text" size="20" value="">
+                 <div class="row-centered">
+                  <div class="col-lg-5">
+                   <label>Subject:</label>
+                  </div>
+                   <div class="col-lg-7">
+                      <input name="subject" type="text" size="20" value="">
+                   </div>
+                 </div>
+                 <div class="row-centered">
+                  <div class="col-lg-5">
+                     <label>Message:</label>
+                  </div>
+                     <div class="col-lg-7">
+                         <textarea name="message" rows="3" cols="25" >
+                         </textarea>
+                     </div>
+                   </div>
+                   <div class="row-centered">
+                     <div class="col-lg-5">
+                  <input name="mailsend" type="submit" value="Send">
                   </div>
                 </div>
-                <div class="row-centered">
-                 <div class="col-lg-5">
-                  <label>Subject:</label>
-                 </div>
-                  <div class="col-lg-7">
-                     <input name="subject" type="text" size="20" value="">
-                  </div>
-                </div>
-                <div class="row-centered">
-                 <div class="col-lg-5">
-                    <label>Message:</label>
-                 </div>
-                    <div class="col-lg-7">
-                        <textarea name="message" rows="3" cols="30" >
-                        </textarea>
-                    </div>
-                  </div>
-                  <div class="row-centered">
-                    <div class="col-lg-5">
-                 <input name="mailsend" type="submit" value="Send">
-                 </div>
-               </div>
-              </form>
+               </form>
         </div>
     </div>
     <div class="modal-footer">

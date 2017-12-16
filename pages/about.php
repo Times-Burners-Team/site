@@ -15,6 +15,7 @@ if(isset($_POST['mailsend'])){
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <title>TimeBurnersTeam</title>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
   <script src="../js/bootstrap.min.js"></script>
@@ -64,7 +65,7 @@ if(isset($_POST['mailsend'])){
                     <label>Message:</label>
                  </div>
                     <div class="col-lg-7">
-                        <textarea name="message" rows="3" cols="30" >
+                        <textarea name="message" rows="3" cols="25" >
                         </textarea>
                     </div>
                   </div>
@@ -165,8 +166,6 @@ if(isset($_POST['mailsend'])){
     <div class="container">
       <div class="row centered"><hr/>
         <p>THERE WILL BE SOMETHING RELATED TO FOOOTER</p>
-        <div class="col-lg-2 col-lg-offset-1">
-        </div>
       </div>
     </div>
     <div class="container">

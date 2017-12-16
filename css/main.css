@@ -255,19 +255,41 @@ FEEDBACK
 #myModal .modal-dialog{
   border: solid #282828;
   border-radius: 10px;
-  width: 35%;
+  width: 600px!important;
+  max-width: 20%;
+  margin:5% 0% 0% 40%!important;
 }
-#myModal .modal-header ,h3{
+ @media (max-width: 600px) {
+   #myModal .modal-dialog {
+     max-width: 75%;
+     margin:5% 10%!important;
+   }
+ }
+
+
+#myModal .container{
+  padding:0px!important;
+}
+#myModal .modal-header{
+  max-width: 100%;
   color: #818181;
   background-color: #333;
   border-radius: 7px 7px 0px 0px;
 }
+#myModal .modal-header h3{
+  max-width: 100px;
+  color: #818181;
+  word-wrap: break-all;
+}
 #myModal .modal-body{
+  max-width: 100%;
   background-color: #eeeeee;
   text-align: center;
-  padding:none!important;
+  max-width: 100%;
+  padding:0px!important;
 }
 #myModal .modal-footer{
+  max-width: 100%;
   background-color: #333;
   padding: 20px;
 }
@@ -277,8 +299,8 @@ form {
 }
 form .container{
 }
-form input .row-centered {
-  width: ;
+form input[type=text] {
+  max-width: 100%;
 }
 form .row-centered, .btn1{
   margin-top:10px;
@@ -305,9 +327,33 @@ FEEDBACK
 #ic {
   color: #f85c37
 }
+@media (max-width: 600px){
+  aside #cont2{
+    width: 80%;
+    height: 400px!important;
+    margin:20% 0% 10% 10%!important;
+    background-color: #F1EFEF!important;
+  }
+  aside .inf{
+    margin: 225px 0px 0px 0px!important;
+    width: 250px!important;
+    height: 300px!important;
+    text-align: left!important;
+  }
+  aside #cont2 img{
+    width: 120px!important;
+    margin: -64px 0px 0px 26%!important;
+  }
+  aside #cont2 {
+    border-left: 0px!important;
+    border-top: 5px solid rgb(2, 144, 179)!important;
+  }
+}
+
 aside{
   background-color: #535353;
 }
+
 aside #cont2 {
   background-color: #b0bac1;
   border-left:5px solid rgb(2, 144, 179);
