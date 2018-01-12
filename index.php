@@ -94,15 +94,14 @@ if(isset($_POST['mailsend'])){
         <span class="icon-bar"></span>
       </button>
       <div class="wow bounceInLeft">
-      <a class="navbar-brand" href="index.php">TimeBurnersTeam
-      <i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
+      <a class="navbar-brand" href="index">TimeBurnersTeam<i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
     </div>
     </div>
     <div class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="index.php" class="wow bounceInDown">Home</a></li>
-        <li><a href="pages/about.php" class="wow bounceInDown">About Us</a></li>
-        <li><a href="pages/oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
+        <li><a href="index" class="wow bounceInDown">Home</a></li>
+        <li><a href="pages/about" class="wow bounceInDown">About Us</a></li>
+        <li><a href="pages/oldWorks" class="wow bounceInDown">Portfolio</a></li>
         <li><a href="#myModal" data-toggle="modal" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
       </ul>
     </div>
@@ -155,27 +154,27 @@ if(isset($_POST['mailsend'])){
   <div class="container">
     <div class="row centered">
       <div class="wow bounceIn" data-wow-delay="1s">
-      <h4>Nashi raboti</h4>
+      <h4>Portfolio</h4>
     </div>
       <br>
       <div class="col-lg-4">
         <div class="tilt">
         <div>
-          <a href="pages/oldWorks.php"><img class="wow bounceInLeft" data-wow-delay="1s" src="img/p01.png" alt=""></a>
+          <a href="pages/oldWorks"><img class="wow bounceInLeft" data-wow-delay="1s" src="img/p01.png" alt=""></a>
         </div>
       </div>
       </div>
       <div class="col-lg-4">
         <div class="tilt">
         <section>
-          <a href="pages/oldWorks.php"><img class="wow bounceIn" data-wow-delay="1s" src="img/p02.png" alt=""></a>
+          <a href="pages/oldWorks"><img class="wow bounceIn" data-wow-delay="1s" src="img/p02.png" alt=""></a>
         </section>
       </div>
       </div>
       <div class="col-lg-4">
         <div class="tilt">
         <div>
-          <a href="pages/oldWorks.php"><img  class="wow bounceInRight" data-wow-delay="1s" src="img/p03.png" alt=""></a>
+          <a href="pages/oldWorks"><img  class="wow bounceInRight" data-wow-delay="1s" src="img/p03.png" alt=""></a>
         </div>
       </div>
       </div>

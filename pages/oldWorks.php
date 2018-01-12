@@ -92,15 +92,15 @@ if(isset($_POST['mailsend'])){
             <span class="icon-bar"></span>
           </button>
           <div class="wow bounceInLeft">
-          <a class="navbar-brand" href="../index.php">TimeBurnersTeam
+          <a class="navbar-brand" href="../index">TimeBurnersTeam
           <i class="fa fa-fire" id="ic" aria-hidden="true"></i></a>
         </div>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li><a href="../index.php" class="wow bounceInDown">Home</a></li>
-            <li><a href="about.php" class="wow bounceInDown">About Us</a></li>
-            <li><a href="oldWorks.php" class="wow bounceInDown">Portfolio</a></li>
+            <li><a href="../index" class="wow bounceInDown">Home</a></li>
+            <li><a href="about" class="wow bounceInDown">About Us</a></li>
+            <li><a href="oldWorks" class="wow bounceInDown">Portfolio</a></li>
             <li><a href="#myModal" data-toggle="modal" class="wow bounceInRight"><i class="fa fa-envelope-o" aria-hidden="true"></i></a></li>
           </ul>
         </div>
