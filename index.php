@@ -112,7 +112,7 @@ if(isset($_POST['mailsend'])){
     <div class="row centered">
       <div class="col-lg-8 col-lg-offset-2">
         <h1 class="wow bounceInDown">We are the company</h1>
-        <h2 class="wow bounceInUp">Who make site like a god</h2>
+        <h2 class="wow bounceInUp">Who makes site</h2>
       </div>
     </div>
   </div>
